@@ -1,0 +1,9 @@
+extends layout
+
+block content
+  h1= title
+  p Welcome to my #{title}
+  p How to use: head into the /new route and submit a new message!
+  ul
+  each val in messages
+    li= '\' ' + val.text + ' \'' + ' By: ' + val.user + ' Sent: ' + val.added

@@ -1,0 +1,14 @@
+extends layout
+
+block content
+  h1= title
+  form(method='POST' action='/new')
+    label(for='fname') Sender name:
+    input#fname(type='text' name='sender')
+    br
+    br
+    label(for='lname') Message:
+    input#lname(type='text' name='message')
+    br
+    br
+    input(type='submit' value='Submit')
